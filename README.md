@@ -1,8 +1,19 @@
-#### My htop settings
+#### My keyboard settings
 
+##### CapsLock::Escape  (in .zshrc)
 ```bash
-c ~/.config/htop
-echo "#### My htop settings >> README.md
+sudo loadkeys ~/.config/kbd/esc.map
+```
+
+##### Xmodmap           (in .xinitrc)
+```bash
+xmodmap ~/.config/kbd/.Xmodmap
+```
+
+### Create a repo from CLI:
+```bash
+c ~/.config/kbd
+echo "#### My kbd settings >> README.md
 ```
 
 ```bash
@@ -16,6 +27,6 @@ gh auth status
 ```
 
 ```bash
-gh repo create config_htop --public --source=. --remote=origin
+gh repo create config_kbd --public --source=. --remote=origin
 git push -u origin main
 ```
