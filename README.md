@@ -1,8 +1,8 @@
-#### My keyboard settings
+#### Keyboard configurations
 
 ##### CapsLock::Escape  (in .zshrc)
 ```bash
-sudo loadkeys ~/.config/kbd/esc.map
+sudo loadkeys $ZDOTDIR/esc.map
 ```
 
 ##### Xmodmap           (in .xinitrc)
